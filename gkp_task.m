@@ -3,15 +3,16 @@ function [] = gkp_task(job_dx)
 	addpath(genpath('.'));
 
 	% disp(job_dx)
-	gmas = linspace(0.001, 0.8, 250);
-	lil_gmas = gmas(job_dx : job_dx + 9);
+	gmas = linspace(0.001, 0.8, 50);
+	lil_gmas = gmas(job_dx : job_dx + 1);
 
 	% basic setup
-	phys_dim = 10;
-	log_dim = 4;
+	phys_dim = 5;
+	log_dim = 2;
 
 	% average photon number from d = 4 compressed code
-	n_bar = 4.424428894086496;
+	% n_bar = 4.424428894086496;
+	n_bar = 1.5;
 
 	% squeezing ensures approximate mean photon numbers are similar
 	delta = sqrt(1. / (2. * (n_bar + 0.5)));
