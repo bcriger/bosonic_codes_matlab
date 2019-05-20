@@ -28,7 +28,8 @@
 #SBATCH --mail-type=FAIL
 
 # Job array to divide 250 points into 4-hour batches
-#SBATCH --array=1-241:10
+##SBATCH --array=1-241:10
+#SBATCH --array=1-49:2
 
 # Your job commands go below here
 
