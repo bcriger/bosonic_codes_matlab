@@ -42,3 +42,4 @@ module load matlab/R2018b
 # For example: srun python my_program.py
 # Use this simple command to check that your sbatch settings are working (verify the resources allocated in the usage statistics)
 srun matlab -nodesktop -nodisplay -nojvm -nosplash -r 'gkp_task('${SLURM_ARRAY_TASK_ID}'); exit'
+
